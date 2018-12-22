@@ -336,8 +336,8 @@ int main(void)
                     P6OUT &= ~BIT4;         //CS0
                     P7OUT &= ~BIT0;         //CS1
                     P4OUT |= BIT3;          //CS2
-                    P4OUT &= ~BIT0;         //CE0
-                    P7OUT |= BIT4;          //CE1
+                    P4OUT |= BIT0;         //CE0
+                    P7OUT &= ~BIT4;          //CE1
                     P8OUT |= BIT2;          //CE2
                 break;
             case 18:TB0CCR0 = 673;// D2
