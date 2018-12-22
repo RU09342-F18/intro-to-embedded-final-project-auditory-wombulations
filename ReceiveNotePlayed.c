@@ -12,27 +12,27 @@ void main(void)
     P6DIR &= ~BIT5; //A0
     P1DIR &= ~BIT6; //A#0
     P6DIR &= ~BIT6; //B0
-    P2DIR &= ~BIT7; //C0
-    P6DIR &= ~BIT0; //C#0
-    P6DIR &= ~BIT1; //D0
-    P6DIR &= ~BIT2; //D#0
-    P6DIR &= ~BIT3; //E0
-    P6DIR &= ~BIT4; //F0
-    P7DIR &= ~BIT0; //F#0
-    P2DIR &= ~BIT5; //G0
-    P2DIR &= ~BIT4; //G#0
+    P2DIR &= ~BIT7; //C1
+    P6DIR &= ~BIT0; //C#1
+    P6DIR &= ~BIT1; //D1
+    P6DIR &= ~BIT2; //D#1
+    P6DIR &= ~BIT3; //E1
+    P6DIR &= ~BIT4; //F1
+    P7DIR &= ~BIT0; //F#1
+    P2DIR &= ~BIT5; //G1
+    P2DIR &= ~BIT4; //G#1
     P1DIR &= ~BIT5; //A1
     P1DIR &= ~BIT4; //A#1
     P1DIR &= ~BIT3; //B1
-    P1DIR &= ~BIT2; //C1
-    P4DIR &= ~BIT3; //C#1
-    P4DIR &= ~BIT0; //D1
-    P3DIR &= ~BIT7; //D#1
-    P8DIR &= ~BIT2; //E1
-    P2DIR &= ~BIT0; //F1
-    P2DIR &= ~BIT2; //F#1
-    P7DIR &= ~BIT4; //G1
-    P2DIR &= ~BIT6; //G#1
+    P1DIR &= ~BIT2; //C2
+    P4DIR &= ~BIT3; //C#2
+    P4DIR &= ~BIT0; //D2
+    P3DIR &= ~BIT7; //D#2
+    P8DIR &= ~BIT2; //E2
+    P2DIR &= ~BIT0; //F2
+    P2DIR &= ~BIT2; //F#2
+    P7DIR &= ~BIT4; //G2
+    P2DIR &= ~BIT6; //G#2
     P2DIR &= ~BIT3; //A2
 
     //Configure UART
@@ -56,39 +56,39 @@ void main(void)
              noteplayed = 25;
          }
 
-         else if((P2IN & BIT6) == BIT6)   //G#1
+         else if((P2IN & BIT6) == BIT6)   //G#2
          {
              noteplayed = 24;
          }
-         else if((P7IN & BIT4) == BIT4)   //G1
+         else if((P7IN & BIT4) == BIT4)   //G2
          {
              noteplayed = 23;
          }
-         else if((P2IN & BIT2) == BIT2)   //F#1
+         else if((P2IN & BIT2) == BIT2)   //F#2
          {
              noteplayed = 22;
          }
-         else if((P2IN & BIT0) == BIT0)   //F1
+         else if((P2IN & BIT0) == BIT0)   //F2
          {
              noteplayed = 21;
          }
-         else if((P8IN & BIT2) == BIT2)   //E1
+         else if((P8IN & BIT2) == BIT2)   //E2
          {
              noteplayed = 20;
          }
-         else if((P3IN & BIT7) == BIT7)   //D#1
+         else if((P3IN & BIT7) == BIT7)   //D#2
          {
              noteplayed = 19;
          }
-         else if((P4IN & BIT0) == BIT0)   //D1
+         else if((P4IN & BIT0) == BIT0)   //D2
          {
              noteplayed = 18;
          }
-         else if((P4IN & BIT3) == BIT3)   //C#1
+         else if((P4IN & BIT3) == BIT3)   //C#2
          {
              noteplayed = 17;
          }
-         else if((P1IN & BIT2) == BIT2)   //C1
+         else if((P1IN & BIT2) == BIT2)   //C2
          {
              noteplayed = 16;
          }
@@ -104,39 +104,39 @@ void main(void)
          {
              noteplayed = 13;
          }
-         else if((P2IN & BIT4) == BIT4)   //G#0
+         else if((P2IN & BIT4) == BIT4)   //G#1
          {
              noteplayed = 12;
          }
-         else if((P2IN & BIT5) == BIT5)   //G0
+         else if((P2IN & BIT5) == BIT5)   //G1
          {
              noteplayed = 11;
          }
-         else if((P7IN & BIT0) == BIT0)   //F#0
+         else if((P7IN & BIT0) == BIT0)   //F#1
          {
              noteplayed = 10;
          }
-         else if((P6IN & BIT4) == BIT4)   //F0
+         else if((P6IN & BIT4) == BIT4)   //F1
          {
              noteplayed = 9;
          }
-         else if((P6IN & BIT3) == BIT3)   //E0
+         else if((P6IN & BIT3) == BIT3)   //E1
          {
              noteplayed = 8;
          }
-         else if((P6IN & BIT2) == BIT2)   //D#0
+         else if((P6IN & BIT2) == BIT2)   //D#1
          {
              noteplayed = 7;
          }
-         else if((P6IN & BIT1) == BIT1)   //D0
+         else if((P6IN & BIT1) == BIT1)   //D1
          {
              noteplayed = 6;
          }
-         else if((P6IN & BIT0) == BIT0)   //C#0
+         else if((P6IN & BIT0) == BIT0)   //C#1
          {
              noteplayed = 5;
          }
-         else if((P2IN & BIT7) == BIT7)   //C0
+         else if((P2IN & BIT7) == BIT7)   //C1
          {
              noteplayed = 4;
          }
